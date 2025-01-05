@@ -1,0 +1,31 @@
+{
+  "name": "lesson-7.2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint",
+    "prettier": "prettier",
+    "unicorn": "unicorn",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LubovKrash/lesson-7.2.git"
+  },
+  "author": "Lubov Krash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LubovKrash/lesson-7.2/issues"
+  },
+  "homepage": "https://github.com/LubovKrash/lesson-7.2#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  }
+}
