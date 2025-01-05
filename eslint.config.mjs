@@ -12,7 +12,6 @@ export default [
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
   js.configs.recommended,
-  eslintconfigPrettier,
 
   {
     rules: {
@@ -20,4 +19,5 @@ export default [
       'no-undef': 'warn',
     },
   },
+  eslintconfigPrettier,
 ];
