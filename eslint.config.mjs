@@ -1,23 +1,24 @@
 import globals from 'globals';
 import pluginJs from '@eslint/js';
-import pluginReact from 'eslint-plugin-react';
-import js from '@eslint/js';
-import eslintconfigPrettier from 'eslint-config-prettier';
+import pluginReact from "eslint-plugin-react";
+import configPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ['**/*.{js,mjs,cjs,jsx}'] },
-  { files: ['**/*.js'], languageOptions: { sourceType: 'script' } },
-  { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended,
-  pluginReact.configs.flat.recommended,
-  js.configs.recommended,
-
-  {
-    rules: {
-      'no-unused-vars': 'warn',
-      'no-undef': 'warn',
+    { languageOptions: { globals: globals.browser } },
+    pluginJs.configs.recommended,
+    pluginReact.configs.flat.recommended,
+    {
+        rules: {
+            'no-var': 'error',
+            semi: 'error',
+            indent: 'error',
+            'no-multi-spaces': 'error',
+            'space-in-parens': 'error',
+            'no-multiple-empty-lines': 'error',
+            'prefer-const': 'error',
+            'no-use-before-define': 'error',
+        },
     },
-  },
-  eslintconfigPrettier,
+    configPrettier,
 ];
